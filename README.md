@@ -41,3 +41,20 @@ It supports large-scale enumeration, including sensitive TLDs like:
 1. Clone or download this repository:
    ```bash
    git clone https://github.com/yourusername/ST-Enum.git
+   Open Chrome and go to:
+chrome://extensions/
+Enable Developer Mode (top right)
+
+Click Load unpacked and select the ST-Enum folder
+
+⚠️ Legal Notice
+This tool is intended for educational and research purposes only.
+It is not affiliated with or endorsed by SecurityTrails.
+Use it responsibly and at your own risk.
+
+---
+
+### ✨ Developed by
+
+**Ali Al-Dabbagh**  
+📍 Follow me on Facebook: [facebook.com/hussein.amer.75491](https://www.facebook.com/hussein.amer.75491/)
