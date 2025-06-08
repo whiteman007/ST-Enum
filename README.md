@@ -39,7 +39,7 @@ It supports large-scale enumeration, including sensitive TLDs like:
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/yourusername/ST-Enum.git
+   git clone https://github.com/whiteman007/ST-Enum.git
    Open Chrome and go to:
 chrome://extensions/
 Enable Developer Mode (top right)
