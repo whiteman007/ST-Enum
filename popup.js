@@ -111,7 +111,7 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
             currentPage++;
             updateLoadingMessage(`Collecting domains... ${allDomains.length} domains collected`);
 
-            await delay(12000); // تأخير 12 ثانية بين كل طلب وآخر لتفادي الحظر
+            await delay(14000); // تأخير 12 ثانية بين كل طلب وآخر لتفادي الحظر
         }
 
         console.log(`✅ Successfully extracted ${allDomains.length} domains!`);
