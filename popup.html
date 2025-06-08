@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domain Extractor</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background-color: #f4f7fc;
+      color: #333;
+      box-sizing: border-box;
+      margin: 0;
+      width: 350px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h2 {
+      color: #007BFF;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      transition: border 0.3s ease;
+    }
+    input[type="text"]:focus {
+      border: 1px solid #007BFF;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #domainList {
+      margin-top: 20px;
+      max-height: 200px;
+      overflow-y: auto;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    #domainList li {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+      color: #555;
+    }
+    #domainList li:last-child {
+      border-bottom: none;
+    }
+    #downloadBtn {
+      background-color: #008CBA;
+      margin-top: 15px;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+    #downloadBtn:disabled {
+      opacity: 0.3;
+    }
+    #loadingMessage {
+      margin-top: 10px;
+      color: #888;
+      font-size: 14px;
+      text-align: center;
+    }
+    #estimatedTotal {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+    #logo {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 20px;
+      object-fit: cover;
+      animation: rotateLeftToRight 3s infinite linear;
+    }
+    #authorLink {
+      color: #ff5722; /* لون مميز */
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    #authorLink:hover {
+      color: #e64a19; /* لون أغمق عند التمرير */
+      text-decoration: underline;
+    }
+
+    @keyframes rotateLeftToRight {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img id="logo" src="a.jpg" alt="Logo" />
+  
+  <h2>Domain Extractor</h2>
+  <input type="text" id="domainInput" placeholder="Enter domain (e.g., gov.us)" />
+  <button id="fetchBtn">Fetch Domains</button>
+  <div id="domainList"></div>
+  <button id="downloadBtn" disabled>Download Domains</button>
+  <p id="loadingMessage"></p>
+  <div id="estimatedTotal"></div>
+  <footer>
+    <p>&copy; 2025 <a href="https://www.facebook.com/hussein.amer.75491/" target="_blank" id="authorLink">Hussein Amer</a>. All rights reserved.</p>
+  </footer>
+<script src="getBuildId.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "sec_trail",
+  "version": "2.0",
+  "description": "Fetch subdomains and save them.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://securitytrails.com/*"
+  ],
+  "icons": {
+    "200": "logo.png"
+  }
+}
