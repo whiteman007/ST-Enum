@@ -19,7 +19,6 @@ It supports large-scale enumeration, including sensitive TLDs like:
 
 - ❌ No API key required (free API is limited to only 1,000 results)
 - 📦 Extract up to **10,000+ subdomains**
-- 🚀 Works via frontend parsing – no backend required
 - 🧠 Useful for OSINT, Bug Bounty, and cybersecurity research
 - 🐢 Built-in delay to avoid getting rate-limited or blocked
 
