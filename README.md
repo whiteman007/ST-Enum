@@ -55,5 +55,5 @@ Use it responsibly and at your own risk.
 
 ### ✨ Developed by
 
-**Ali Al-Dabbagh**  
+**Hussein Amer**  
 📍 Follow me on Facebook: [facebook.com/hussein.amer.75491](https://www.facebook.com/hussein.amer.75491/)
